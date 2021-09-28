@@ -1,0 +1,23 @@
+{
+  "name": "store-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemom app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendypalomino/store-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendypalomino/store-api/issues"
+  },
+  "homepage": "https://github.com/wendypalomino/store-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  }
+}
