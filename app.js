@@ -2,9 +2,14 @@ require('dotenv').config()
 
 const express = require('express')
 const app = express()
-const connectDB =  require('./db/db')
+
+const notFoundMiddleware = require('./middleware/not-found')
+const errorMiddleware = require('./middleware/error-handler');
+const connectDB =  require('./db/db');
 
 app.use(express.json())
+app.use(errorMiddleware)
+app.use(notFoundMiddleware)
 
 const port = process.env.PORT || 3000
 
